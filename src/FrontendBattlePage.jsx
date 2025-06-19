@@ -20,6 +20,7 @@ export default function FrontendBattlePage() {
         </div>
       ) : (
         <>
+          {/* Navbar */}
           <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-opacity-80 backdrop-blur-md sticky top-0 z-50 dark:bg-gray-800 bg-white">
             <h1 className="text-xl font-bold">Frontend Battle</h1>
             <ul className="flex gap-4">
@@ -33,19 +34,25 @@ export default function FrontendBattlePage() {
             </button>
           </nav>
 
-          <section id="home" className="min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/assets/stats.png')" }}>
-            <div className="bg-black bg-opacity-50 p-10 rounded-xl text-white text-center">
+          {/* Hero Section */}
+          <section
+            id="home"
+            className="min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+            style={{ backgroundImage: "url('/assets/stats.png')" }}
+          >
+            <div className="bg-black bg-opacity-70 text-white p-6 rounded-xl backdrop-blur-md text-center max-w-2xl w-full">
               <h2 className="text-4xl font-bold mb-4">Replicate & Innovate</h2>
-              <p className="text-lg max-w-xl mx-auto">Recreate the design with enhancements that impress 🌟</p>
+              <p className="text-lg">Recreate the design with enhancements that impress ✨</p>
             </div>
           </section>
 
+          {/* Features Section */}
           <section id="features" className="p-10 bg-gray-100 dark:bg-gray-800">
             <h2 className="text-3xl font-semibold mb-6 text-center">Core Features</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {["Cards Layout", "Graph Analytics", "Video Popups", "Parallax Scroll", "Testimonials", "Ripple Effects"].map((feature, i) => (
                 <div key={i} className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow">
-                  <img src={`/assets/cards.png`} alt="Feature Visual" className="rounded mb-4" />
+                  <img src="/assets/cards.png" alt="Feature Visual" className="rounded mb-4" />
                   <h3 className="font-bold mb-2">{feature}</h3>
                   <p>Implemented using the media assets provided. Enhancements added for interactivity and polish.</p>
                 </div>
@@ -53,6 +60,7 @@ export default function FrontendBattlePage() {
             </div>
           </section>
 
+          {/* Video Showcase */}
           <section id="showcase" className="p-10 bg-white dark:bg-gray-900">
             <h2 className="text-3xl font-semibold text-center mb-6">Video Showcase</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -67,6 +75,7 @@ export default function FrontendBattlePage() {
             </div>
           </section>
 
+          {/* Contact */}
           <section id="contact" className="p-10 text-center">
             <h2 className="text-2xl font-bold mb-4">Contact</h2>
             <p>Reach out via GitHub or email after submitting your challenge. Good luck!</p>
