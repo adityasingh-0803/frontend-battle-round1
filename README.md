@@ -54,6 +54,7 @@ A responsive, modern, and interactive single-page web application built as a cha
 
 ## 📁 Project Structure
 
+
 frontend-battle-round1/
 ├── public/
 │ └── assets/
@@ -65,15 +66,15 @@ frontend-battle-round1/
 │ ├── scroll and pop up.mp4
 │ └── ripple effect.mp4
 ├── src/
-│ ├── FrontendBattlePage.jsx # Main page with all components
-│ ├── main.jsx # Entry point
-│ └── index.css # Tailwind styles
+│ ├── FrontendBattlePage.jsx # Main page with all sections
+│ ├── main.jsx # App entry point
+│ └── index.css # Tailwind styling
 ├── index.html
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
 ├── vite.config.js
-└── README.md
+└── README.md # You're reading it!
 
 ---
 
