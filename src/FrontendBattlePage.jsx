@@ -60,22 +60,31 @@ export default function FrontendBattlePage() {
             </div>
           </section>
 
-          {/* Video Showcase */}
+          {/* Showcase Section */}
           <section id="showcase" className="p-10 bg-white dark:bg-gray-900">
             <h2 className="text-3xl font-semibold text-center mb-6">Video Showcase</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {["features-services.mp4", "homepage.mp4", "scroll and pop up.mp4", "ripple effect.mp4"].map((video, i) => (
-                <div key={i} className="rounded-xl overflow-hidden shadow-lg">
-                  <video controls className="w-full rounded-xl">
-                    <source src={`/assets/${video}`} type="video/mp4" />
+              {[
+                { file: "features-services.mp4", title: "Feature Highlights" },
+                { file: "homepage.mp4", title: "Homepage Walkthrough" },
+                { file: "scroll and pop up.mp4", title: "Scroll & Popup Animation" },
+                { file: "ripple effect.mp4", title: "Ripple Visual Effect" }
+              ].map(({ file, title }, i) => (
+                <div key={i} className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
+                  <video
+                    controls
+                    className="w-full rounded-xl"
+                    poster="/assets/cards.png"
+                  >
+                    <source src={`/assets/${file}`} type="video/mp4" />
                   </video>
-                  <p className="text-center mt-2">{video.replace(/\\.mp4$/, '').replace(/-/g, ' ')}</p>
+                  <p className="text-center mt-3 font-medium">{title}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          {/* Contact */}
+          {/* Contact Section */}
           <section id="contact" className="p-10 text-center">
             <h2 className="text-2xl font-bold mb-4">Contact</h2>
             <p>Reach out via GitHub or email after submitting your challenge. Good luck!</p>
