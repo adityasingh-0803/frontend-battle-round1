@@ -34,13 +34,13 @@ export default function FrontendBattlePage() {
             </button>
           </nav>
 
-          {/* Hero Section - Overlay top-aligned and balanced */}
+          {/* Hero Section - Contrast fixed */}
           <section
             id="home"
             className="min-h-screen bg-cover bg-center px-4 pt-24 flex justify-center"
             style={{ backgroundImage: "url('/assets/stats.png')" }}
           >
-            <div className="bg-white bg-opacity-40 dark:bg-black dark:bg-opacity-60 text-white p-6 rounded-xl backdrop-blur-md text-center max-w-2xl w-full">
+            <div className="bg-black bg-opacity-60 text-white p-6 rounded-xl backdrop-blur-md text-center max-w-2xl w-full">
               <h2 className="text-4xl font-bold mb-4">Replicate & Innovate</h2>
               <p className="text-lg">Recreate the design with enhancements that impress ✨</p>
             </div>
