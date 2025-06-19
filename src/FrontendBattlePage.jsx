@@ -34,10 +34,10 @@ export default function FrontendBattlePage() {
             </button>
           </nav>
 
-          {/* Hero Section */}
+          {/* Hero Section - Fixed Position */}
           <section
             id="home"
-            className="min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+            className="min-h-screen flex items-start justify-center bg-cover bg-center pt-32 px-4"
             style={{ backgroundImage: "url('/assets/stats.png')" }}
           >
             <div className="bg-black bg-opacity-70 text-white p-6 rounded-xl backdrop-blur-md text-center max-w-2xl w-full">
